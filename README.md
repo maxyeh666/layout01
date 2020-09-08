@@ -96,7 +96,7 @@ SCSS基本應用:
             }
         }
         ```  
-        ex2編譯後:  
+        ex2:編譯後 
         ```CSS
         .read-more{
             display: block;
@@ -118,7 +118,7 @@ SCSS基本應用:
   3. 繼承(extend)  
       繼承指定項目的所有樣式,使用@extend來引用
       若使用%來設定繼承用樣式,則不會進行編譯,僅能引用,可以視作類似變數的功能  
-      ex編譯前:  
+      ex:編譯前  
       ```CSS
       %decoration {
           text-decoration: none;
@@ -132,7 +132,7 @@ SCSS基本應用:
           }
       }
       ```
-      ex編譯後:  
+      ex:編譯後 
       ```CSS
       a, a:visited {
         text-decoration: none;
