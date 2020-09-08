@@ -1,0 +1,62 @@
+// 顏色
+$black-01: #000;
+$black-01-op70: rgba(0, 0, 0 , 0.7);
+$black-01-op20: rgba(0, 0, 0 , 0.2);
+$black-02:#111;
+$white-01:#fff;
+$white-01-op90:rgba(255, 255, 255, 0.9);
+$white-02:rgb(206, 206, 206);
+$grey-01:#aaa;
+$grey-02:#bbb;
+$grey-03:#ddd;
+$grey-04:#888;
+$grey-05:rgb(94, 94, 94);
+$grey-06-op50:rgba(99, 99, 99, 0.5);
+$grey-07:rgb(49, 49, 49);
+$green:rgb(2, 172, 175);
+$green-op60: rgba(2, 172, 175, 0.6);
+$green-hover:rgb(12, 143, 77);
+$light-green:rgb(176, 229, 230);
+$blue:rgb(0, 114, 185);
+$light-blue-op50:rgba(138, 200, 230, 0.5);
+$dodger-blue: dodgerblue;
+$antique-white:antiquewhite;
+$dark-green:darkgreen;
+
+// 字型
+$Poooins: 'Poppins', sans-serif;
+$Tajawal: 'Tajawal', sans-serif;
+$font-normal-m: 500;
+$font-bold-m: 800;
+$font-bold-l: 900;
+
+// 大小控制
+$size-xl: 2.5rem;
+$size-l: 2rem;
+$size-ml: 1.5rem;
+$size-m: 1rem;
+$size-ms: 0.75rem;
+$size-s: 0.5rem;
+$size-xs: 0.25rem;
+$line-height-m: 1.5;
+$line-height-l: 2;
+
+// 內容字體大小調整專用
+$text-xs: 0.5rem;
+$text-s: 0.75rem;
+$text-m: 1rem;
+$text-ml: 1.25rem;
+$text-l: 1.5rem;
+$text-xl: 2rem;
+$text-xxl: 2.5rem;
+
+// 通用方塊長寬設定
+$block-width: 1200px;
+$block-text-width: 440px;
+$block-text-height: 440px;
+
+// transition速度
+$trans-xquick: 0.3s;
+$trans-quick: 0.5s;
+$trans-slow: 0.75s;
+$trans-xslow: 1s;

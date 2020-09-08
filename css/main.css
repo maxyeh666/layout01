@@ -44,11 +44,6 @@ h3 div{
     left: 0;
     bottom: 0;
 }
-.align-left-out{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
 .text-adjust{
     font-size: 1.5rem;
 }
@@ -74,14 +69,14 @@ h3 div{
     display: inline-block;
     line-height: 1.5;
 }
-.light-green{
+.green{
     background-color: rgb(2, 172, 175,0.6);
 }
 .blue{
     background-color: rgb(138, 200, 230,0.5);
 }
 .white {
-    background-color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 .grey {
     background-color: #aaa;
@@ -260,7 +255,7 @@ li:hover .sub-menu{
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    margin-bottom: 40p;
+    margin-bottom: 40px;
 }
 .service-block{
     display:inline-block;
@@ -272,6 +267,7 @@ li:hover .sub-menu{
     width: calc(100% - 440px);
     height: 100%;
     min-height: 440px;
+    padding: 120px 30px;
     vertical-align: top;
     background-color: rgb(49, 49, 49);
 }
@@ -443,12 +439,9 @@ li:hover .sub-menu{
     line-height: 2;
     margin-top: 5rem;
 }
-@media (min-width: 1025px){
+@media (min-width: 1200px){
     .service-content{
         max-width: 440px;
-    }
-    .service-content-text{
-        padding: 120px 30px;
     }
     .product-content-text::after{
         content: '';
@@ -465,7 +458,7 @@ li:hover .sub-menu{
         max-height: 440px;
     }
 }
-@media (min-width:769px) and (max-width:1024px){
+@media (min-width:769px) and (max-width:1200px){
     nav{
         right: 5%;
     }
@@ -579,10 +572,6 @@ li:hover .sub-menu{
     }
     .sub-menu{
         display: none;
-    }
-    nav{
-        margin-top: 10px;
-        left: 5%;
     }
     .section02 h3 span:last-child{
         display: block;

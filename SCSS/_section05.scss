@@ -1,0 +1,44 @@
+.section05{
+    display: inline-block;
+    width: 100%;
+    
+    .service-list-block{
+        display:block;
+        width: 100%;
+        max-width: $block-width;
+        margin: auto;
+    }
+    .service-content{
+        display: inline-block;
+        width: 100%;
+        text-align: start;
+    }   
+    .service-detail{
+        display: inline-block;
+        vertical-align: top;
+        text-align: start;
+    }
+    .service-list{
+        display: block;
+        padding-top: 3rem;
+        a{
+            display: block;
+            line-height: 2;
+        }
+    }
+    .service-list-title{
+        line-height: 1.5;
+    }
+    .service-detail-item{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .service-detail-item-text{
+        display: inline-block; 
+        line-height: 1.5;
+        vertical-align: top;
+        margin-left: 2.25rem;
+        margin-top: 3.75rem;
+    }
+}

@@ -1,0 +1,37 @@
+// 基礎設定(標籤為主)
+
+//繼承樣式
+
+// 裝飾用
+%decoration {
+    text-decoration: none;
+    color: $dodger-blue;
+}
+
+*{
+    font-size: 0;
+    box-sizing: border-box;
+}
+h2{
+    font-size: $text-xl;
+    font-weight: $font-bold-l;
+    span {
+        display: block;
+        font-weight: $font-normal-m;
+    }
+}
+h3{
+    font-size: $text-l;
+    span {
+        font-weight: $font-normal-m;
+    }
+    div {
+        font-weight: $font-normal-m;
+    }
+}
+a{
+    @extend%decoration;
+    &:visited{
+        @extend %decoration;
+    }
+}

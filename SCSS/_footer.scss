@@ -1,0 +1,29 @@
+footer{
+    display:inline-block;
+    width: 100%;
+    font-size: 0;
+
+    .footer-block{
+        display:block;
+        width: 100%;
+        max-width: $block-width;
+        margin: auto;
+        .contact-info{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+            position: relative;
+            .contact-info-text{
+                display: block;
+                padding-top: 30px;
+                text-align: start;
+                font-size: $text-xl;
+            }
+        }
+        .contact-info :nth-child(3),
+        .contact-info :nth-child(4){
+            font-size: $text-l;
+        }
+    }
+}

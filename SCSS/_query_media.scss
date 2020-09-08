@@ -1,0 +1,361 @@
+@media (min-width: 1200px){
+    footer{
+        .contact-info{
+            max-width: $block-text-width;
+            max-height: $block-text-height;
+        }
+    }
+    .section05{
+        .service-content{
+            max-width: $block-text-width;
+        }
+    }
+    .section03{
+        .product-content-text{
+            &::after{
+                content: '';
+                position: absolute;
+                margin: 0;
+                top: 0;
+                left: 100%;
+                width: calc((100vw - #{$block-width})/2);
+                height: $block-text-height;
+                background-color: $black-01-op70;
+            }
+        }
+    }
+}
+@media (min-width:769px) and (max-width:1200px){
+    header{
+        .logo{
+            position: absolute;
+            margin-top: 10px;
+            left: 5%;
+        }
+        nav{
+            right: 5%;
+        }
+    }
+    footer{
+        .contact-info{
+        max-width: $block-text-width;
+        max-height: $block-text-height;
+
+            .contact-info-text{
+                margin-left: 20px;
+            }
+        }
+    }
+    .section02{
+        .service-content-text{
+            padding: 40px 10px;
+            height: $block-text-height;
+        }
+        .service-advantage{
+            margin-top: 2rem;
+
+            .service-item{
+                padding: 5px;
+            }
+        }
+    }
+    .section03{
+        .product-content{
+            &::before{
+                content: '';
+                display: block;
+                width: $block-text-width;
+                height: calc(100% - #{$block-text-height * 2});
+                background-color: $black-01-op70;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .product-content-text{
+                padding: 40px 30px;
+            }
+        }
+    }
+    .section05{
+        .service-content,
+        .service-detail{
+            display: block;
+        }
+        .service-list{
+        width: 560px;
+        padding-top: 1rem;
+        margin-left: calc((100vw - 560px) / 2);
+        }
+        .service-detail-item-text{
+            margin-left: 40px;
+        }
+    }
+    .icons{
+        margin-left: 20px;
+    }
+}
+@media (min-width:569px) and (max-width:768px){
+    header {
+        .logo{
+            left: 35%;
+        }
+        nav{
+            left: 5%;
+            margin-top: 10px;
+        }
+        .menu{
+            display: block;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: $grey-02;
+            border-radius: 0.25rem;
+            border: 2px solid $grey-05;
+            position: relative;
+    
+            &::before{
+                content: '';
+                position: absolute;
+                width: 2rem;
+                height: 2px;
+                background: $black-01;
+                left: 2px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                box-shadow: 0px 10px 0px $black-01,
+                            0px -10px 0px $black-01;
+            } 
+            .menu-list{
+                position: fixed;
+                width: 40%;
+                height: 100%;
+                top: 60px;
+                left: -10%;
+                line-height: 2;
+                background-image: linear-gradient(to right,$grey-02,$grey-03);
+                transform: translateX(-100%);
+                transition: 0.5s;
+        
+                li{
+                    width: 95%;
+                    border-bottom: 1px solid $grey-06-op50;
+                }
+            }
+            #menu-switch:checked + .menu-list{
+                transform: translateX(0);
+            }
+            .menu-item{
+                text-align: start;
+                margin-left: 4rem;
+            }
+            .sub-menu{
+                display: none;
+            }
+            i{
+                display: none !important;
+            }
+        }
+    }
+    footer{
+        .contact-info-text{
+            margin: auto;
+            padding: 50px;
+        }
+    }   
+    .content-block{
+        img{
+            display: none;
+        }
+    } 
+    .section02{
+        .service-block{
+            background-color: $grey-07;
+
+            img{
+                display: none;
+            }
+        }
+        .service-advantage{
+            margin-top: 2rem;
+
+            .service-item{
+                padding: 5px;
+            }
+        }
+        .service-content,
+        .service-detail{
+            display: block;
+            width: 100%;
+        }
+        .service-content-text{
+            width: 100%;
+            height: $block-text-height;
+            padding: 120px 10px;
+        }
+        h3{
+            span{
+                &:last-child{
+                    display: block;
+                }
+            }
+        }
+    }
+    .section03{
+        .product-content{
+            margin-left: 0;
+
+            .product-content-text{
+                padding: 80px 10px;
+            }
+        }
+    }
+    .section05{
+        .service-list{
+            width: 560px;
+            padding-top: 1rem;
+            margin-left: calc((100% - 560px) / 2);
+        }
+        .service-detail{
+            width: 100%;
+
+            .service-detail-item{
+                text-align: center;        
+                .service-detail-item-text{
+                    display: block;
+                    width: 100%;
+                    margin-top: 1rem;
+                    margin-left: 0;
+                }
+            }
+        }
+        .read-more{
+            width: 9rem;
+            font-size: $text-m;
+            margin: 1rem auto;
+        }
+    }
+    .text-adjust{
+        font-size: $text-ml;
+    }
+    #map{
+        display:block;
+        width: 100vw;
+    }
+}
+@media  (max-width:568px){
+    img{
+        display: none!important;
+    }
+    header{
+        .logo{
+            left: 35%;
+        }
+        nav{
+            left: 5%;
+            margin-top: 10px;
+        }
+        .menu{
+            display: block;
+            width: $size-xl;
+            height: $size-xl;
+            background-color: $grey-02;
+            border-radius: 0.25rem;
+            border: 2px solid $grey-05;
+            position: relative;
+    
+            &::before{
+                content: '';
+                position: absolute;
+                width: 2rem;
+                height: 2px;
+                background: $black-01;
+                left: 2px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                box-shadow: 0px 10px 0px $black-01,
+                            0px -10px 0px $black-01;
+            } 
+            .menu-list{
+                position: fixed;
+                width: 40%;
+                height: 100%;
+                top: 60px;
+                left: -10%;
+                line-height: 2;
+                background-image: linear-gradient(to right,$grey-02,$grey-03);
+                transform: translateX(-100%);
+                transition: $trans-quick;
+
+                li{
+                    width: 95%;
+                    border-bottom: 1px solid $grey-06-op50;
+                }
+            }
+            i{
+                display: none !important;
+            }
+        }
+        #menu-switch:checked + .menu-list{
+            transform: translateX(0);
+        }
+        .menu-item{
+            text-align: start;
+            margin-left: 4rem;
+        }
+        .sub-menu{
+            display: none;
+        }
+    }
+    footer{
+        display: block;
+
+        .contact-info-text{
+            padding: 2rem 1rem;
+        }
+    }
+    .content-block-text{
+        width: 100%;
+    }
+    .section02{
+        .service-advantage{
+            margin-top: 2rem;
+        }
+        .service-content-text{
+            width: 100%;
+        }
+        .container{
+            flex-direction: column;
+        }
+        .service-item{
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+
+    .section03{
+        .product-content{
+            margin: 0;
+        }
+    }
+    .section05{
+        .service-list{
+            padding: 2rem 1rem;
+        }
+        .service-detail{
+            display: none;
+        }
+    }
+    #map{
+        display:none
+    }
+}
+
+// 針對不支援hover的裝置
+@media (hover:none){
+    .top-button{
+        &:hover{
+            background-color: $green;
+        }
+    }
+}

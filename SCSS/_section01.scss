@@ -1,0 +1,14 @@
+.section01{
+    display: inline-block;
+    width: 100%;
+    background-image: url('https://source.unsplash.com/1600x900/?nature');
+    background-attachment: fixed;
+    background-size: cover;
+    
+    &::before{
+        display: block;
+        content: '';
+        height: 60px;
+        width: 100%;
+    }
+}

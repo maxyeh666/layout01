@@ -1,0 +1,158 @@
+// 通用class
+
+// 字體
+.font-Poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.font-Tajawal{
+    font-family: 'Tajawal', sans-serif;
+}
+
+//顏色
+.green{
+    background-color: $green-op60;
+}
+.blue{
+    background-color: $light-blue-op50;
+}
+.white {
+    background-color: $white-01-op90;
+}
+.grey {
+    background-color: $grey-01;
+}
+.black-opacity{
+    background-color: $black-01-op70;
+}
+
+// 字體顏色
+.font-white{
+    color: $white-01;
+}
+.font-black{
+    color: $black-01;
+}
+.font-grey{
+    color: $grey-04;
+}
+.font-green{
+    color: $green;
+}
+.font-light-green{
+    color: $light-green;
+}
+
+//偏移
+.align-left{
+    position: absolute;
+    left: 0;
+}
+
+// 主要內容文字調整
+.text-adjust{
+    font-size: $text-l;
+}
+
+// 通用內容方塊
+.content-block{
+    display:block;
+    width: 100%;
+    max-width: $block-width;
+    margin: auto;
+    position: relative;
+    img{
+        display: block;
+        margin-left: $block-text-width * -1;
+    }
+}
+.content-block-text{
+    display: block;
+    width:  $block-text-width;
+    height: $block-text-height;
+    padding: 130px 40px 130px 40px;
+    text-align: start;
+}
+
+// flex用container
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+// 更多消息方塊
+.read-more{
+    display: block;
+    width: 6rem;
+    text-align: center;
+    font-size: $text-s;
+    font-weight: $font-bold-m;
+    padding: $size-ms $size-s;
+    border-radius: $size-xs;
+    margin-top: 1.25rem;
+    transition: $trans-quick;
+    &:hover{
+        background-color: $white-02;
+        color: $green;
+        transition: $trans-quick;
+    }
+}
+
+// 淡入淡出效果
+.fade{
+    opacity: 0;
+    transition: $trans-xslow;
+}
+.fade-out {
+    opacity: 1;
+    transition: $trans-xslow;
+}
+.btn-fade{
+    opacity: 0;
+    transition: $trans-quick;
+}
+.btn-fade-out {
+    opacity: 1;
+    transition: $trans-quick;
+}
+
+// 回到最上方按鈕
+.top-button{
+    position: fixed;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    top: 85%;
+    right: 3%;
+    background-color: $green;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px $black-01-op20;  
+    transition: $trans-quick; 
+    z-index: 3;
+    cursor: pointer;
+
+    .fas{
+        font-size: $size-l;
+        width: 100%;
+        text-align: center;
+        line-height: 72px;
+    }
+    &:hover{
+        background-color: $blue;
+        transition: $trans-quick;
+    }
+}
+
+// icon圖案
+.icons{
+    font-size: $text-xl;
+    line-height: 2;
+    margin-top: 5rem;
+}
+
+// google map地圖
+#map{
+    display:inline-block;
+    width: calc(100% - #{$block-text-width});
+    height: $block-text-height;
+}
