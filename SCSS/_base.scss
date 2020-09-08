@@ -15,6 +15,7 @@
 h2{
     font-size: $text-xl;
     font-weight: $font-bold-l;
+
     span {
         display: block;
         font-weight: $font-normal-m;
@@ -31,6 +32,7 @@ h3{
 }
 a{
     @extend%decoration;
+    
     &:visited{
         @extend %decoration;
     }

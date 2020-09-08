@@ -21,13 +21,14 @@
     .service-list{
         display: block;
         padding-top: 3rem;
+
         a{
             display: block;
-            line-height: 2;
+            line-height: $line-height-l;
         }
     }
     .service-list-title{
-        line-height: 1.5;
+        line-height: $line-height-m;
     }
     .service-detail-item{
         display: block;
@@ -36,7 +37,7 @@
     }
     .service-detail-item-text{
         display: inline-block; 
-        line-height: 1.5;
+        line-height: $line-height-m;
         vertical-align: top;
         margin-left: 2.25rem;
         margin-top: 3.75rem;

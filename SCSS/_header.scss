@@ -20,7 +20,7 @@ header{
         font-size: $text-xxl;
     }
     label{
-        > span{
+        span{
             font-size: $text-m;
         }
     } 
@@ -41,18 +41,21 @@ header{
     }
     .menu{
         position: relative;
+
         .sub-menu{
             visibility: hidden;
             position: absolute;
             width: 9.5rem;
             margin-top: 4rem;
             background-color: #111;
-            padding: $size-ms $size-s;
+            padding: 0.75rem 0.5rem;
             opacity: 0;
             transition: $trans-slow $trans-xquick;
+
             li{
                 display: block;
-                > a{
+
+                a{
                     color: $white-01;
                 }
                 &:hover {
@@ -80,6 +83,7 @@ header{
                 padding: 12px 8px;
                 opacity: 0;
                 transition: $trans-slow $trans-xquick;
+
                 li{
                     &:hover{
                         a{
@@ -91,6 +95,7 @@ header{
         }
         .menu-item{
             text-align: center;
+
             &:hover{
                 color: $black-01;
             }
@@ -98,9 +103,10 @@ header{
         li{
             display: inline-block;
             vertical-align: top;
+            
             a{
                 display: block;
-                padding: $size-xs $size-s;
+                padding: 0.25rem 0.5rem;
                 text-decoration: none;
                 color: $green-hover;
             }

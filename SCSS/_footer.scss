@@ -8,12 +8,14 @@ footer{
         width: 100%;
         max-width: $block-width;
         margin: auto;
+
         .contact-info{
             display: inline-block;
             width: 100%;
             height: 100%;
             vertical-align: top;
             position: relative;
+            
             .contact-info-text{
                 display: block;
                 padding-top: 30px;

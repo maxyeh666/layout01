@@ -60,6 +60,7 @@
     max-width: $block-width;
     margin: auto;
     position: relative;
+
     img{
         display: block;
         margin-left: $block-text-width * -1;
@@ -87,10 +88,11 @@
     text-align: center;
     font-size: $text-s;
     font-weight: $font-bold-m;
-    padding: $size-ms $size-s;
-    border-radius: $size-xs;
+    padding: 0.75rem 0.5rem;
+    border-radius: 0.25rem;
     margin-top: 1.25rem;
     transition: $trans-quick;
+    
     &:hover{
         background-color: $white-02;
         color: $green;

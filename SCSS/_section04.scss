@@ -5,17 +5,6 @@
     background-attachment: fixed;
     background-size: cover;
 
-    .content-block{
-        &::before{
-            content: '';
-            position: absolute;
-            width: $block-text-width;
-            height: $block-text-height*2;
-            top: 0;
-            left: $block-text-width*-1;
-            background-image: url(https://picsum.photos/440/880);
-        }
-    }
     img{
         display: block;
         margin-left: 0;

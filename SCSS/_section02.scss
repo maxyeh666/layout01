@@ -8,7 +8,7 @@
             }
             &:last-child{
                 display: inline-block;
-                line-height: 1.5;
+                line-height: $line-height-m;
             }
         }
     } 
@@ -31,6 +31,7 @@
         padding: 120px 30px;
         vertical-align: top;
         background-color: $grey-07;
+
         h2{
             font-size: $text-xl;
             line-height: $line-height-m;
@@ -41,7 +42,7 @@
     }
     .service-item{
         width: 320px;
-        font-size: 1rem;
+        font-size: $text-m;
     }
     .service-advantage{
         display: block;

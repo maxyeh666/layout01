@@ -110,7 +110,7 @@ header h1 {
   font-size: 2.5rem;
 }
 
-header label > span {
+header label span {
   font-size: 1rem;
 }
 
@@ -152,7 +152,7 @@ header .menu .sub-menu li {
   display: block;
 }
 
-header .menu .sub-menu li > a {
+header .menu .sub-menu li a {
   color: #fff;
 }
 
@@ -531,16 +531,6 @@ footer .footer-block .contact-info :nth-child(4) {
   background-size: cover;
 }
 
-.section04 .content-block::before {
-  content: '';
-  position: absolute;
-  width: 440px;
-  height: 880px;
-  top: 0;
-  left: -440px;
-  background-image: url(https://picsum.photos/440/880);
-}
-
 .section04 img {
   display: block;
   margin-left: 0;
@@ -603,9 +593,6 @@ footer .footer-block .contact-info :nth-child(4) {
     max-width: 440px;
     max-height: 440px;
   }
-  .section05 .service-content {
-    max-width: 440px;
-  }
   .section03 .product-content-text::after {
     content: '';
     position: absolute;
@@ -615,6 +602,18 @@ footer .footer-block .contact-info :nth-child(4) {
     width: calc((100vw - 1200px)/2);
     height: 440px;
     background-color: rgba(0, 0, 0, 0.7);
+  }
+  .section04 .content-block::before {
+    content: '';
+    position: absolute;
+    width: 440px;
+    height: 880px;
+    top: 0;
+    left: -440px;
+    background-image: url(https://picsum.photos/440/880);
+  }
+  .section05 .service-content {
+    max-width: 440px;
   }
 }
 
@@ -791,7 +790,7 @@ footer .footer-block .contact-info :nth-child(4) {
     margin-top: 1rem;
     margin-left: 0;
   }
-  .section05 .read-more {
+  .read-more {
     width: 9rem;
     font-size: 1rem;
     margin: 1rem auto;

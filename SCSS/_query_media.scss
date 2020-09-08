@@ -5,11 +5,6 @@
             max-height: $block-text-height;
         }
     }
-    .section05{
-        .service-content{
-            max-width: $block-text-width;
-        }
-    }
     .section03{
         .product-content-text{
             &::after{
@@ -22,6 +17,24 @@
                 height: $block-text-height;
                 background-color: $black-01-op70;
             }
+        }
+    }
+    .section04{
+        .content-block{
+            &::before{
+                content: '';
+                position: absolute;
+                width: $block-text-width;
+                height: $block-text-height*2;
+                top: 0;
+                left: $block-text-width*-1;
+                background-image: url(https://picsum.photos/440/880);
+            }
+        }
+    }
+    .section05{
+        .service-content{
+            max-width: $block-text-width;
         }
     }
 }
@@ -131,7 +144,7 @@
                 height: 100%;
                 top: 60px;
                 left: -10%;
-                line-height: 2;
+                line-height: $line-height-l;
                 background-image: linear-gradient(to right,$grey-02,$grey-03);
                 transform: translateX(-100%);
                 transition: 0.5s;
@@ -228,11 +241,11 @@
                 }
             }
         }
-        .read-more{
-            width: 9rem;
-            font-size: $text-m;
-            margin: 1rem auto;
-        }
+    }
+    .read-more{
+        width: 9rem;
+        font-size: $text-m;
+        margin: 1rem auto;
     }
     .text-adjust{
         font-size: $text-ml;
@@ -282,7 +295,7 @@
                 height: 100%;
                 top: 60px;
                 left: -10%;
-                line-height: 2;
+                line-height: $line-height-l;
                 background-image: linear-gradient(to right,$grey-02,$grey-03);
                 transform: translateX(-100%);
                 transition: $trans-quick;
