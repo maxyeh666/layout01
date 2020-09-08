@@ -13,12 +13,13 @@
 
 優化部分排版+改用SCSS重新架構CSS  
 ***
-SCSS使用筆記:  
-入門使用vsCode的Live scss compiler  
+#### SCSS使用筆記:  
+初入門使用vsCode的Live scss compiler來熟悉CSS預處理器實際應用  
 ***
 基礎使用:
   - 基本語法與CSS通用
   - 檔案前方加入"_"的檔案不會編譯  
+  - @import時若為scss可不需加上副檔名,css則需要加上
 ***  
 注意要點:
   - 將各個區塊/部件拆開成不同SCSS方便維護與閱讀
